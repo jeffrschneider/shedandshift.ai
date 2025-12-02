@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shed & Shift Operating Model</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Inter', sans-serif; }
+        p, li { font-family: 'Merriweather', serif; line-height: 1.8; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Custom Link Styling (Applied to content paragraphs to preserve Nav/Buttons) */
+        p a {
+            color: #2563eb; /* Blue-600 */
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid #dbeafe; /* Light Blue Underline */
+            padding: 0 2px;
+            transition: all 0.2s ease-in-out;
+        }
+        p a:hover {
+            border-bottom-color: #2563eb;
+            background-color: rgba(37, 99, 235, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i data-lucide="layers" class="h-6 w-6 text-indigo-600"></i>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Shed & Shift</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#intro" class="text-slate-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors">The Concept</a>
+                    <a href="#shed-shift" class="text-slate-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors">The Model</a>
+                    <a href="#tiers" class="text-slate-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors">Operating Tiers</a>
+                    <a href="#conclusion" class="text-slate-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors">Conclusion</a>
+                </div>
+                <!-- Mobile menu button placeholder -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200">
+             <a href="#intro" class="block text-slate-600 hover:bg-slate-50 px-4 py-3 text-base font-medium">The Concept</a>
+             <a href="#shed-shift" class="block text-slate-600 hover:bg-slate-50 px-4 py-3 text-base font-medium">The Model</a>
+             <a href="#tiers" class="block text-slate-600 hover:bg-slate-50 px-4 py-3 text-base font-medium">Operating Tiers</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient relative pt-32 pb-24 lg:pt-48 lg:pb-36 overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-500/20 text-indigo-200 text-sm font-semibold mb-6 border border-indigo-500/30">Operating Model Design</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+                The Shed & Shift <br class="hidden md:block" /> Operating Model
+            </h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto font-light font-sans">
+                Business & I.T.'s Need to Adopt Agentic Transformation
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#intro" class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg transition-all shadow-lg shadow-indigo-500/30 text-decoration-none" style="text-decoration: none; border-bottom: none; color: white;">
+                    Read the Article
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-slate-400">By Jeff Schneider</p>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg prose-indigo mx-auto text-slate-600">
+                <p class="lead text-2xl md:text-3xl font-serif text-slate-800 mb-8 border-l-4 border-indigo-500 pl-6 italic">
+                    "Agentic AI offers a path to dramatically increase capacity and responsiveness but only if Business and I.T. move together."
+                </p>
+                <p>
+                    Those who treat agents as simple automation will see incremental gains; those who embrace true <strong>Human-Agent Pairing</strong> will fundamentally reshape what their workforce can achieve.
+                </p>
+                <div class="my-12 p-8 bg-slate-50 rounded-2xl border border-slate-200">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="users" class="text-indigo-600"></i>
+                        Human-Agent Pairing (HAP)
+                    </h3>
+                    <p class="mb-0 text-slate-700">
+                        HAP is the foundational unit of the modern workforce, a deliberate combination of a human orchestrator and one or more digital agents working in concert. The human provides judgment, context, and oversight while the agent handles volume, speed, and consistency. Designing effective HAPs requires intentionality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Shed & The Shift Concept -->
+    <section id="shed-shift" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">The Shed and The Shift</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto font-sans">
+                    Both must be designed together; shedding without shifting leaves employees diminished, while shifting without shedding leaves them overwhelmed.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- The Shed Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-blue-500 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl"></div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-blue-100 rounded-lg text-blue-600">
+                            <i data-lucide="trash-2" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">The Shed</h3>
+                    </div>
+                    <p class="text-slate-600 mb-6">
+                        Refers to the tasks and responsibilities that move <strong>away from the human and onto an agent</strong>.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span class="text-sm text-slate-700 font-sans">Routine, rules-based work</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span class="text-sm text-slate-700 font-sans">High-volume tasks</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span class="text-sm text-slate-700 font-sans">Automated execution</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- The Shift Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-amber-500 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl"></div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-amber-100 rounded-lg text-amber-600">
+                            <i data-lucide="arrow-up-right" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">The Shift</h3>
+                    </div>
+                    <p class="text-slate-600 mb-6">
+                        The corresponding movement of the human into new, <strong>higher-value responsibilities</strong>.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 text-amber-500 mt-1 flex-shrink-0"></i>
+                            <span class="text-sm text-slate-700 font-sans">Strategic thinking</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 text-amber-500 mt-1 flex-shrink-0"></i>
+                            <span class="text-sm text-slate-700 font-sans">Exception handling & Relationship management</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 text-amber-500 mt-1 flex-shrink-0"></i>
+                            <span class="text-sm text-slate-700 font-sans">Oversight of agents</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-indigo-900 text-white p-8 rounded-xl text-center shadow-lg">
+                <p class="text-lg font-sans font-medium">
+                    "The HAP Analyst role exists because this dual mandate defines what the agent takes over and what the human moves into requires dedicated focus that legacy approaches never anticipated."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 4 Tiers Section -->
+    <section id="tiers" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-indigo-600 font-bold tracking-wider text-sm uppercase">Organizational Architecture</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">The Four Tiers</h2>
+            </div>
+
+            <!-- Tier 1 -->
+            <div class="relative pl-8 sm:pl-12 pb-16 border-l-2 border-slate-200 last:border-0 last:pb-0">
+                <div class="absolute -left-[9px] top-0 bg-white border-4 border-indigo-600 rounded-full w-5 h-5"></div>
+                
+                <div class="bg-slate-50 rounded-xl p-6 md:p-8 shadow-sm border border-slate-100 mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">1. Setting the Strategic Objectives</h3>
+                    <p class="text-sm text-slate-500 mb-6 font-sans uppercase tracking-wide">Strategic Tier</p>
+                    <p class="text-slate-600 mb-6">
+                        The Strategic Tier sets the foundation for the entire operating model. This is where organizational architecture is designed, investment priorities are established, and the overall "machine" is defined. The leaders here don't manage individual projects, they optimize the system itself. The handoff to Tier 2 comes in the form of strategic direction, portfolio priorities, and organizational design decisions.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Role 1 -->
+                        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                <i data-lucide="compass" class="w-4 h-4 text-indigo-500"></i> Value Stream Engineer
+                            </h4>
+                            <p class="text-sm text-slate-600 font-sans">
+                                Architects of the enterprise. They design structures, cost models, and KPIs. They ensure investment decisions align with the operating model.
+                            </p>
+                        </div>
+                         <!-- Role 2 -->
+                         <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                <i data-lucide="briefcase" class="w-4 h-4 text-indigo-500"></i> Portfolio Manager
+                            </h4>
+                            <p class="text-sm text-slate-600 font-sans">
+                                The gatekeeper of investment. Balances resources between "Strategic Apps & Agents" and the "Long Tail of JITware" (citizen developer tools).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="relative pl-8 sm:pl-12 pb-16 border-l-2 border-slate-200 last:border-0 last:pb-0">
+                <div class="absolute -left-[9px] top-0 bg-white border-4 border-amber-500 rounded-full w-5 h-5"></div>
+                
+                <div class="bg-slate-50 rounded-xl p-6 md:p-8 shadow-sm border border-slate-100 mb-6 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">2. Defining Human/Agent Responsibilities</h3>
+                    <p class="text-sm text-slate-500 mb-6 font-sans uppercase tracking-wide">Transformation Tier</p>
+                    <p class="text-slate-600 mb-6">
+                        The Transformation Tier is the execution engine for role and workflow transitions. Specific employees are identified for transformation, their tasks are analyzed, and the path forward is defined. The handoff to Tier 3 comes in two forms: the Role Change Specialist defines the human's new upstream responsibilities, while the HAP Analyst produces specifications for agents.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-1">Program Manager</h4>
+                            <p class="text-sm text-slate-600 font-sans">Translates strategic direction into coordinated action. Orchestrates the timeline.</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-amber-50 p-5 rounded-lg border border-amber-100 shadow-sm">
+                                <h4 class="font-bold text-amber-900 mb-1 flex items-center gap-2">
+                                    <i data-lucide="user-plus" class="w-4 h-4 text-amber-600"></i> Role Change Specialist
+                                </h4>
+                                <p class="text-xs font-bold text-amber-600 uppercase mb-2">Focus: The Shift</p>
+                                <p class="text-sm text-slate-700 font-sans">
+                                    Defines exactly which tasks an employee will shed and what new upstream responsibilities they will take on. Works with HR.
+                                </p>
+                            </div>
+                            <div class="bg-blue-50 p-5 rounded-lg border border-blue-100 shadow-sm">
+                                <h4 class="font-bold text-blue-900 mb-1 flex items-center gap-2">
+                                    <i data-lucide="bot" class="w-4 h-4 text-blue-600"></i> HAP Analyst
+                                </h4>
+                                <p class="text-xs font-bold text-blue-600 uppercase mb-2">Focus: The Shed</p>
+                                <p class="text-sm text-slate-700 font-sans">
+                                    Analyzes work being removed and writes detailed specs for agents. Hands off specs to Product Owners.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="relative pl-8 sm:pl-12 pb-16 border-l-2 border-slate-200 last:border-0 last:pb-0">
+                <div class="absolute -left-[9px] top-0 bg-white border-4 border-indigo-600 rounded-full w-5 h-5"></div>
+                
+                <div class="bg-slate-50 rounded-xl p-6 md:p-8 shadow-sm border border-slate-100 mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">3. Delivery</h3>
+                    <p class="text-sm text-slate-500 mb-6 font-sans uppercase tracking-wide">Product & Engineering</p>
+                    <p class="text-slate-600 mb-6">
+                        The Delivery Tier builds and maintains the digital assets that power the operating model. This includes both traditional applications (Systems of Record) and the net-new agents specified by Tier 2. The handoff to Tier 4 is the delivery of working agents and tools into the hands of frontline Workers, enabling them to operate as orchestrators within their Human-Agent Pairs.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-2">Product Owner</h4>
+                            <p class="text-sm text-slate-600 font-sans">
+                                Manages backlog for apps and agents. Translates requirements from Transformation Tier into actionable work.
+                            </p>
+                        </div>
+                        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-2">Agentic Dev Team</h4>
+                            <p class="text-sm text-slate-600 font-sans">
+                                A hybrid workforce of human engineers and swarms of development agents. They build and deploy the solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 4 -->
+            <div class="relative pl-8 sm:pl-12">
+                <div class="absolute -left-[9px] top-0 bg-white border-4 border-green-500 rounded-full w-5 h-5"></div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 md:p-8 shadow-md border border-green-100">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">4. Operational</h3>
+                    <p class="text-sm text-green-700 mb-6 font-sans uppercase tracking-wide">The Frontline</p>
+                    <p class="text-slate-600 mb-6">
+                        The Operational Tier is where value is ultimately delivered. This is the frontline of execution, where modernized Workers operate alongside their paired Agents to get work done. There is no formal handoff from this tier; instead, feedback loops flow back up through the model, informing the Transformation and Strategic Tiers about what's working and what needs adjustment.
+                    </p>
+                    
+                    <div class="flex flex-col md:flex-row gap-8 items-center justify-center p-6 bg-white rounded-xl border border-green-100 shadow-sm">
+                        <!-- Worker -->
+                        <div class="text-center flex-1">
+                            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-600">
+                                <i data-lucide="user" class="w-8 h-8"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900">The Worker</h4>
+                            <p class="text-xs text-slate-500 uppercase mt-1">Orchestrator</p>
+                            <p class="text-sm text-slate-600 mt-3 font-sans">
+                                Task triage, exception handling, and oversight. The "eyes and ears" of the operation.
+                            </p>
+                        </div>
+
+                        <!-- Connection -->
+                        <div class="text-slate-300">
+                            <i data-lucide="arrow-right-left" class="w-8 h-8 hidden md:block"></i>
+                            <i data-lucide="arrow-up-down" class="w-8 h-8 md:hidden"></i>
+                        </div>
+
+                        <!-- Agent -->
+                        <div class="text-center flex-1">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+                                <i data-lucide="cpu" class="w-8 h-8"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900">AI Agent</h4>
+                            <p class="text-xs text-slate-500 uppercase mt-1">Digital Worker</p>
+                            <p class="text-sm text-slate-600 mt-3 font-sans">
+                                Executes "Shed" tasks. Operates under supervision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion" class="py-20 bg-slate-900 text-slate-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Conclusion</h2>
+            <div class="text-lg leading-relaxed mb-12 font-serif text-slate-300">
+                 <p class="mb-6">
+                    The <a href="https://theagenticenterprise.net">Agentic Enterprise</a> fuses human creativity with machine scale. By <a href="https://offloadingbook.com">Offloading</a> routine work to <a href="https://agenticdevelopment.ai">Agentic Development</a> swarms, teams can <a href="https://shedandshift.ai">Shed and Shift</a> focus to high-value strategy.
+                </p>
+                <p>
+                    Here, <a href="https://specdriven.ai">SpecDriven</a> intent and Vibe Engineering replace rigid syntax. This empowers anyone to instantly generate <a href="https://jitware.net">JITware</a>, tactical software created on demand without engineering overhead.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-600 py-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            &copy; 2025 Shed & Shift Model Concept. All text adapted from original work.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
