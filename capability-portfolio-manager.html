@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capability Portfolio Manager | Shed & Shift</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Inter', sans-serif; }
+        p, li { font-family: 'Merriweather', serif; line-height: 1.8; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #581c87 0%, #7c3aed 100%);
+        }
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        p a {
+            color: #7c3aed;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid #ede9fe;
+            padding: 0 2px;
+            transition: all 0.2s ease-in-out;
+        }
+        p a:hover {
+            border-bottom-color: #7c3aed;
+            background-color: rgba(124, 58, 237, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i data-lucide="layers" class="h-6 w-6 text-purple-600"></i>
+                        <span class="font-bold text-xl tracking-tight text-slate-900">Shed & Shift</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="index.html#shed-shift" class="text-slate-600 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors">The Model</a>
+                    <a href="index.html#tiers" class="text-slate-600 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors">Operating Tiers</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient relative pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-purple-500/20 text-purple-100 text-sm font-semibold mb-6 border border-purple-500/30">Strategic Tier Role</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
+                Capability Portfolio Manager
+            </h1>
+            <p class="text-xl text-purple-100 max-w-2xl mx-auto font-serif">
+                The strategic gatekeeper of investment who balances resources across human and agent capabilities within business domains.
+            </p>
+        </div>
+    </header>
+
+    <!-- What is a Capability Portfolio Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">Understanding Capability Portfolios</h2>
+                <div class="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-r-xl mb-8">
+                    <p class="text-slate-700 text-lg">
+                        A <strong>Capability Portfolio</strong> represents the complete set of abilities—both human and digital—that an organization deploys within a business domain. In the Agentic Enterprise, this includes humans, their skills, AI agents, traditional applications, and the integrations that connect them.
+                    </p>
+                </div>
+                <p class="text-slate-600 mb-6">
+                    The Capability Portfolio Manager operates at the intersection of business strategy and operational execution. They ensure that investment decisions align with the organization's operating model—determining not just <em>what</em> to build, but <em>who</em> (human or agent) should perform which work.
+                </p>
+                <p class="text-slate-600 mb-6">
+                    This role evolved from traditional IT Portfolio Management, but with a critical expansion: the portfolio now includes both technology assets and the human-agent combinations that use them. The CPM thinks in terms of domain capabilities, not just applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Responsibilities Section -->
+    <section class="py-20 bg-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Core Responsibilities</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto font-sans">
+                    The Capability Portfolio Manager balances strategic investments with tactical needs across business domains.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-purple-500 card-hover">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-purple-100 rounded-lg text-purple-600">
+                            <i data-lucide="pie-chart" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Investment Allocation</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">
+                        Determines how resources are distributed across domains, balancing strategic initiatives against operational needs and maintenance.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-700 font-sans">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Domain-level budget allocation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Strategic vs. tactical prioritization</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>ROI tracking and optimization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-purple-500 card-hover">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-purple-100 rounded-lg text-purple-600">
+                            <i data-lucide="users" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Human-Agent Coverage</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">
+                        Ensures each business domain has the right mix of human expertise and agent capabilities to deliver on business objectives.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-700 font-sans">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Domain capability mapping</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Coverage gap identification</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Human-agent ratio optimization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-purple-500 card-hover">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-purple-100 rounded-lg text-purple-600">
+                            <i data-lucide="building-2" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Strategic Apps & Agents</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">
+                        Oversees investment in enterprise-grade applications and agents that require professional development, governance, and long-term support.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-700 font-sans">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Enterprise agent governance</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Strategic roadmap alignment</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Cross-domain integration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-purple-500 card-hover">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-purple-100 rounded-lg text-purple-600">
+                            <i data-lucide="zap" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Long Tail of JITware</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">
+                        Manages the ecosystem of "Just-In-Time" solutions—citizen developer tools, lightweight agents, and tactical automations that emerge organically.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-700 font-sans">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Citizen developer enablement</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Shadow IT governance</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                            <span>Tactical solution lifecycle</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Coverage Model -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">The Domain Coverage Model</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto font-sans">
+                    In the Agentic Enterprise, every business domain requires a deliberate blend of human expertise and agent capabilities.
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 md:p-12 shadow-lg border border-slate-200">
+                <div class="grid md:grid-cols-3 gap-8 mb-10">
+                    <!-- Human Capabilities -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-600">
+                            <i data-lucide="user" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Human Capabilities</h3>
+                        <ul class="text-left text-sm text-slate-600 space-y-2 font-sans">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-amber-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Domain expertise</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-amber-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Judgment & decision-making</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-amber-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Relationship management</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-amber-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Exception handling</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Agent Capabilities -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+                            <i data-lucide="bot" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Agent Capabilities</h3>
+                        <ul class="text-left text-sm text-slate-600 space-y-2 font-sans">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-blue-500 mt-1.5 flex-shrink-0"></i>
+                                <span>High-volume processing</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-blue-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Rules-based execution</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-blue-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Pattern recognition</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-blue-500 mt-1.5 flex-shrink-0"></i>
+                                <span>24/7 availability</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Shared Infrastructure -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-600">
+                            <i data-lucide="database" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Shared Infrastructure</h3>
+                        <ul class="text-left text-sm text-slate-600 space-y-2 font-sans">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-purple-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Systems of record</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-purple-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Integration platforms</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-purple-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Data & analytics</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="circle" class="h-3 w-3 text-purple-500 mt-1.5 flex-shrink-0"></i>
+                                <span>Security & compliance</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-purple-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i data-lucide="info" class="w-6 h-6 text-purple-600 flex-shrink-0"></i>
+                        <h4 class="font-bold text-slate-900">The CPM's Job</h4>
+                    </div>
+                    <p class="text-slate-600">
+                        For each business domain, the Capability Portfolio Manager determines the optimal mix: How many humans with what skills? Which agents handling which tasks? What applications and integrations support them? The goal is complete domain coverage with the right balance of human judgment and agent efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic vs Long Tail Section -->
+    <section class="py-20 bg-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Balancing the Portfolio</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto font-sans">
+                    Every organization faces a critical tension: invest in enterprise-grade strategic solutions or enable rapid tactical innovation?
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Strategic Side -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-purple-600">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-purple-100 rounded-lg text-purple-600">
+                            <i data-lucide="building" class="h-8 w-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Strategic Apps & Agents</h3>
+                            <p class="text-sm text-purple-600 font-sans font-medium">Enterprise-Grade Investment</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-6">
+                        Core systems that require formal governance, professional development, and long-term support. These are the backbone of domain operations.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="bg-purple-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-slate-800 mb-2">Characteristics</h4>
+                            <ul class="text-sm text-slate-600 space-y-1 font-sans">
+                                <li>• Multi-year investment horizon</li>
+                                <li>• Professional development teams</li>
+                                <li>• Formal change management</li>
+                                <li>• Enterprise integration requirements</li>
+                            </ul>
+                        </div>
+                        <div class="bg-purple-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-slate-800 mb-2">Examples</h4>
+                            <ul class="text-sm text-slate-600 space-y-1 font-sans">
+                                <li>• Core domain agents (claims processing, order management)</li>
+                                <li>• Systems of record integrations</li>
+                                <li>• Cross-domain workflow engines</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long Tail Side -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-amber-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-amber-100 rounded-lg text-amber-600">
+                            <i data-lucide="sparkles" class="h-8 w-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Long Tail of JITware</h3>
+                            <p class="text-sm text-amber-600 font-sans font-medium">Citizen-Enabled Innovation</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-6">
+                        Tactical solutions that emerge from frontline needs. Quick to build, focused on immediate problems, enabled by citizen developers.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="bg-amber-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-slate-800 mb-2">Characteristics</h4>
+                            <ul class="text-sm text-slate-600 space-y-1 font-sans">
+                                <li>• Short lifecycle (days to months)</li>
+                                <li>• Citizen developer creation</li>
+                                <li>• Lightweight governance</li>
+                                <li>• Domain-specific focus</li>
+                            </ul>
+                        </div>
+                        <div class="bg-amber-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-slate-800 mb-2">Examples</h4>
+                            <ul class="text-sm text-slate-600 space-y-1 font-sans">
+                                <li>• Personal productivity agents</li>
+                                <li>• Team-specific automations</li>
+                                <li>• Ad-hoc reporting tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-slate-900 text-white p-8 rounded-xl text-center shadow-lg">
+                <p class="text-lg font-sans font-medium">
+                    "The CPM's art lies in knowing when to elevate a JITware solution to strategic status, when to sunset a strategic investment, and how to maintain the right balance for each domain's needs."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership with VSE Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Working with the Value Stream Engineer</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto font-sans">
+                    The Capability Portfolio Manager and Value Stream Engineer form a strategic partnership that shapes the operating model.
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-8 md:p-12 shadow-lg border border-slate-200">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                    <!-- CPM -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-600">
+                            <i data-lucide="briefcase" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-900 mb-2">Capability Portfolio Manager</h3>
+                        <p class="text-xs font-bold text-purple-600 uppercase mb-4">What to Build</p>
+                        <ul class="text-left text-sm text-slate-700 space-y-2 font-sans">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="arrow-right" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                                <span>Investment prioritization</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="arrow-right" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                                <span>Domain capability requirements</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="arrow-right" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                                <span>Human-agent mix decisions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="arrow-right" class="h-4 w-4 text-purple-500 mt-1 flex-shrink-0"></i>
+                                <span>Resource allocation</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- VSE -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600">
+                            <i data-lucide="compass" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-900 mb-2">Value Stream Engineer</h3>
+                        <p class="text-xs font-bold text-indigo-600 uppercase mb-4">How It Flows</p>
+                        <ul class="text-left text-sm text-slate-700 space-y-2 font-sans">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="arrow-right" class="h-4 w-4 text-indigo-500 mt-1 flex-shrink-0"></i>
+                                <span>End-to-end flow design</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="arrow-right" class="h-4 w-4 text-indigo-500 mt-1 flex-shrink-0"></i>
+                                <span>Performance measurement</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="arrow-right" class="h-4 w-4 text-indigo-500 mt-1 flex-shrink-0"></i>
+                                <span>Optimization opportunities</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="arrow-right" class="h-4 w-4 text-indigo-500 mt-1 flex-shrink-0"></i>
+                                <span>Capacity modeling</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-slate-200 text-center">
+                    <p class="text-slate-600 italic">
+                        "The CPM decides where to invest; the VSE ensures those investments deliver value. Together, they architect the machine—the CPM provides the components, the VSE ensures they work together efficiently."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home CTA -->
+    <section class="py-16 bg-purple-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Explore the Full Model</h2>
+            <p class="text-purple-100 mb-8 font-serif">
+                The Capability Portfolio Manager is one piece of the Shed & Shift framework. Discover how all the roles work together.
+            </p>
+            <a href="index.html#tiers" class="inline-flex items-center gap-2 bg-white text-purple-900 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                Back to Operating Tiers
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-600 py-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            &copy; 2026 <a href="https://legendary.ai" class="text-slate-400 hover:text-white transition-colors">Legendary AI</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
